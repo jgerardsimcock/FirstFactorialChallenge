@@ -1,10 +1,10 @@
-var factorial = function(n) {
-  if (n === 0) {
-      return 1
-  }   else {
-    return n * factorial(n-1);
-  }  
-
+function factorial(x){
+  
+  var y= x;
+  for(i=x; i>2; i--) {
+    y = y*(i-1);
+  }
+return y;
 }
 
-console.log(factorial())
+console.log(factorial(5))
